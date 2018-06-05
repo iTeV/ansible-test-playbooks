@@ -1,0 +1,9 @@
+---
+- name: APT playbook
+  hosts: all
+  tasks:
+
+    - name: Ensuring apache2 is present
+      apt:
+        name: "apache2"
+        state: present
