@@ -4,4 +4,4 @@
 
     - name: Debug!
       debug:
-        msg: "Hello world!"
+        msg: "{{ hostvars[inventory_hostname] }}"
